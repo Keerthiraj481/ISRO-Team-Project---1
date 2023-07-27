@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --clr-bg-light-blue: #c9d8fa;
+  --clr-heading-latest-highlights-blue: #03234a;
+  --clr-inner-text: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* Whole body container for the project */
+
+.container-zero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-latest-highlights {
+  background-color: var(--clr-bg-light-blue);
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+/* container for the latest news  */
+
+.container-latest-highlights {
+  background-color: var(--clr-bg-light-blue);
+  padding-bottom: 2rem;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.container-one {
+
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-latest {
+  color: var(--clr-heading-latest-highlights-blue);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.latest-news {
+}
+
+.input-box {
+  width: 55rem;
+  height: 18.5rem;
+  font-size: 1.3rem;
+  overflow: scroll;
+  background: linear-gradient(45deg, #1558ba 20%, #5e93e0 60%, #020c44);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inner-text {
+  color: var(--clr-inner-text);
+  font-weight: 600;
+  padding: 1.5rem 1rem;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+/* container two = highlights */
+.container-two {
+  margin: 1rem 2rem;
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* name = highlighter */
+.heading-highlights {
+  color: var(--clr-heading-latest-highlights-blue);
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.9rem;
+}
+
+/*  Animation added for the slide changer for highlights */
+
+.img-slider {
+  width: 57rem;
+  height: 18.5rem;
+  background-image: url(/images/highlights/akam-home-banner-eng_large.jpg.webp);
+  background-size: 100% 100%;
+  animation: changeimage 10s normal infinite;
+  cursor: pointer;
+}
+@keyframes changeimage {
+  0% {
+    background-image: url(/images/highlights/akam-home-banner-eng_large.jpg.webp);
+  }
+  50% {
+    background-image: url(/images/highlights/yoga\ picture.png);
+  }
+  100% {
+    background-image: url(/images/highlights/akam-home-banner-eng_large.jpg.webp);
+  }
+}
+
+/* whole Container of the Autonomous - ISRO Centres - InSpace NSIL */
+
+.container-three {
+  background: var(--clr-bg-light-blue);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow:auto;
+}
+
+/* Container of Autonomous - ISRO Centres - InSpace NSIL */
+
+.container-autonomous {
+  background: #0c1755;
+  width: 98%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  box-shadow: 5px 10px 29px 0 rgb(0 0 0 / 88%);
+  border-top: 2px solid #0606df;
+
+}
+
+/* Autonomous bodies */
+
+.autonomous-bodies {
+  width: 100%;
+  height: 100%;
+}
+
+.heading-autonomous {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: -9rem;
+  margin-top: 4rem;
+}
+
+.img-autonomous {
+  width: 22vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-left: 1rem;
+  margin-top: -1.8rem;
+}
+
+.img-autonomous img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prl,
+.narl,
+.nesac,
+.iist {
+  /* padding-bottom: 1rem; */
+  padding-top: 1.3rem;
+  background-color: #164682;
+  border: 1px solid #d2be00;
+  border-radius: 4px;
+}
+
+.line-hr {
+}
+
+.prl-img,
+.narl-img,
+.nesac-img,
+.iist-img {
+  padding-top: 0.5rem;
+}
+
+.prl-text,
+.narl-text,
+.nesac-text,
+.iist-text {
+  color: #ffff99;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+/* IN-SPACe NSIL */
+
+.in-space-nsil {
+  margin-right: -4rem;
+  margin-top: 4rem;
+
+}
+
+.heading-in-space {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.img-in-space-nsil {
+  width: 12vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-left: 15rem;
+  margin-top: -1.5rem;
+}
+
+.img-in-space-nsil img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.in-space,
+.nsil {
+  padding-top: 1.3rem;
+  background-color: #164682;
+  border: 1px solid #d2be00;
+  border-radius: 4px;
+}
+
+.in-space-img,
+.nsil-img {
+  padding-top: 0.5rem;
+}
+
+.in-space-text,
+.nsil-text {
+  color: #ffff99;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+/* ISRO Centres & Units */
+
+.isro-centres {
+  margin-top: 2.5rem;
+}
+
+.heading-isro {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-isro-centres {
+  width: 47rem;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-left: -2rem;
+  margin-top: -0.8rem;
+}
+
+.img-isro-centres img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hsfc,.iirs,.vssc,.iprc,.leos,.lpsc,.mcf {
+  padding-top: 1.3rem;
+  background-color: #164682;
+  border: 1px solid #d2be00;
+  border-radius: 4px;
+}
+
+.hsfc-img,.iirs-img,.vssc-img,.iprc-img,.leos-img,.lpsc-img,.mcf-img {
+  padding-top: 0.5rem;
+}
+
+.vssc {
+  width: 20rem;
+}
+
+.hsfc-text,.iirs-text,.vssc-text,.iprc-text,.leos-text,.lpsc-text,.mcf-text {
+  color: #ffff99;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
